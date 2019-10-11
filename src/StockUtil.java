@@ -4,6 +4,13 @@ import java.util.Map;
 import java.util.function.Predicate;
 
 public class StockUtil {
+
+	@Override
+	public String toString() {
+
+		return "StockUtil []";
+	}
+
 	public static StockInfo getPrice(final String ticker) {
 		return new StockInfo(ticker, prices.get(ticker));
 	}
@@ -12,8 +19,7 @@ public class StockUtil {
 		return stockInfo -> stockInfo.price < price;
 	}
 
-	public static StockInfo pickHigh(final StockInfo stockInfo1,
-			final StockInfo stockInfo2) {
+	public static StockInfo pickHigh(final StockInfo stockInfo1, final StockInfo stockInfo2) {
 		return stockInfo1.price > stockInfo2.price ? stockInfo1 : stockInfo2;
 	}
 

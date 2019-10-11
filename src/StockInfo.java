@@ -11,4 +11,4 @@ public class StockInfo {
 	public String toString() {
 		return ticker + " " + price + ", ";
 	}
-}
+};

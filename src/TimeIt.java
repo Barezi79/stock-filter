@@ -11,3 +11,5 @@ public class TimeIt {
 		}
 	}
 }
+
+Copyright Branislav Nesic, 2019
