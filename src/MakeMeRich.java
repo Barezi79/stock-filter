@@ -10,7 +10,11 @@ import org.apache.commons.io.FileUtils;
 public class MakeMeRich {
 	public static final List<String> symbols = Arrays.asList("AMD", "HPQ", "IBM", "TXN", "VMW", "XRX", "AAPL", "ADBE",
 			"AMZN", "CRAY", "CSCO", "SNE", "GOOG", "INTC", "INTU", "MSFT", "ORCL", "TIBX", "VRSN", "YHOO");
+	
+	private static String rootURL = "https://www.alphavantage.co/query";
+	private static String API_KEY = "LN9GE2EHPSRVTYL8";
 
+	
 	public static void main(String[] args) throws IOException {
 
 		// 1. Print these symbols using a Java 8 for-each and lambdas
